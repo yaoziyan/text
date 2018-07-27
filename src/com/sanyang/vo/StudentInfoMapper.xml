@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sanyang.vo.StudentInfoMapper">
+   <select id="chaxun" resultType="com.sanyang.vo.Student">
+     select * from student
+   </select>
+   <delete id="sc" parameterType="java.lang.Integer">
+    delete from student where snumber=#{value}
+   </delete>
+</mapper>
